@@ -324,4 +324,43 @@ header {
   font-weight: 300;
   line-height: 23px;
   margin-left: 14px;
+}
+
+.advantages-wrapper {
+  padding: 47px 0 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-wrapper .advantages-wrapper__card {
+  width: 21%;
+  position: relative;
+}
+.advantages-wrapper .range {
+  border-radius: 50%;
+  background-color: #037E8C;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  z-index: -1;
+}
+.advantages-wrapper .circle img {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 21px;
+}
+.advantages-wrapper .circle h2 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #121214;
+  margin-bottom: 21px;
+}
+.advantages-wrapper .circle p {
+  color: #121214;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */
