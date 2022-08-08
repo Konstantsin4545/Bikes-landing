@@ -166,6 +166,7 @@ body {
 header {
   width: 100%;
   position: absolute;
+  z-index: 10;
 }
 
 .header-wrapper {
@@ -332,8 +333,11 @@ header {
   justify-content: space-between;
 }
 .advantages-wrapper .advantages-wrapper__card {
-  width: 21%;
+  width: 302px;
   position: relative;
+}
+.advantages-wrapper .advantages-wrapper__card:last-child {
+  width: 305px;
 }
 .advantages-wrapper .range {
   border-radius: 50%;
@@ -349,18 +353,248 @@ header {
   display: inline-block;
   width: 44px;
   height: 44px;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 }
 .advantages-wrapper .circle h2 {
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
   color: #121214;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 }
 .advantages-wrapper .circle p {
   color: #121214;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+.ourRoutes {
+  background-color: #F4F4F4;
+  padding-top: 57px;
+}
+.ourRoutes-back {
+  background-image: url(../images/background-ourRoutes.png);
+  padding-bottom: 114px;
+}
+.ourRoutes h2 {
+  font-size: 36px;
+  line-height: 47px;
+  color: #121214;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.ourRoutes__images, .ourRoutes__images2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 51%;
+  flex-wrap: wrap;
+}
+.ourRoutes__images .images__photo1, .ourRoutes__images2 .images__photo1 {
+  margin-right: 23px;
+}
+.ourRoutes__images .images__photo3, .ourRoutes__images2 .images__photo3 {
+  position: absolute;
+  right: -268px;
+  top: 34px;
+}
+.ourRoutes__images2 {
+  flex-direction: row-reverse;
+}
+.ourRoutes__images2 .images2__photo3 {
+  position: absolute;
+  left: -268px;
+  top: 34px;
+}
+.ourRoutes__images2 .images2__photo1 {
+  margin-left: 30px;
+}
+
+.ourRoutes-wrapper {
+  display: flex;
+  margin-bottom: 144px;
+}
+.ourRoutes-wrapper:last-child {
+  margin-bottom: 0;
+}
+.ourRoutes-wrapper .ourRoutes-wrapper__text {
+  width: 49%;
+  margin-right: 30px;
+}
+.ourRoutes-wrapper .ourRoutes-wrapper__text:nth-child(2) {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.ourRoutes-wrapper__text h3 {
+  font-size: 36px;
+  line-height: 39px;
+  font-weight: 600;
+  color: #121214;
+  position: relative;
+  padding-left: 111px;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+.ourRoutes-wrapper__text h3::before {
+  content: "";
+  width: 81px;
+  height: 0px;
+  border: 1px solid #037E8C;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.ourRoutes-wrapper__text .text__margin {
+  margin-left: 111px;
+}
+.ourRoutes-wrapper__text .text__margin .text__routes {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #121214;
+  margin-bottom: 13px;
+}
+.ourRoutes-wrapper__text .text__margin .text__routes::after {
+  content: url(../images/routes-ourRoutes.svg);
+  margin-left: 16px;
+}
+.ourRoutes-wrapper__text .text__margin:last-child .text__stops {
+  margin-bottom: 61px;
+}
+.ourRoutes-wrapper__text .text__stops {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #121214;
+  margin-bottom: 39px;
+}
+.ourRoutes-wrapper__text .text__line {
+  width: 81px;
+  border: 1px solid #037E8C;
+  display: inline-block;
+}
+.ourRoutes-wrapper__text .text__characteristic {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic-style {
+  font-weight: 600;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic__time {
+  margin-bottom: 9px;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic__time::before {
+  content: url(../images/time-ourRoutes.svg);
+  margin-right: 17px;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic__distance {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic__distance::before {
+  content: url(../images/distance-ourRoutes.svg);
+  margin-right: 17px;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: -2px;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic__level {
+  position: relative;
+  padding-left: 30px;
+}
+.ourRoutes-wrapper__text .text__characteristic .characteristic__level::before {
+  content: url(../images/level-ourRoutes.svg);
+  margin-right: 17px;
+  position: absolute;
+  left: -2px;
+}
+.ourRoutes-wrapper__text .text__value {
+  font-size: 24px;
+  color: #121214;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+.ourRoutes-wrapper__text .text__value::after {
+  content: url(../images/ruble.svg);
+  margin-left: 12px;
+}
+.ourRoutes-wrapper .text__learn-button {
+  background: transparent;
+  border: 1.5px #037E8C solid;
+  border-radius: 9px;
+  border-color: #037E8C;
+  background: transparent;
+  background: #F4F4F4;
+  color: #037E8C;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 44px 12px 43px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.ourRoutes-wrapper .text__reserve-button {
+  background: transparent;
+  border: 1.5px #037E8C solid;
+  border-radius: 9px;
+  border-color: #037E8C;
+  background: #037E8C;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 28px 12px 28px;
+  cursor: pointer;
+}
+.ourRoutes-wrapper .images__scroll {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+.ourRoutes-wrapper .images__scroll .scroll__circle1,
+.ourRoutes-wrapper .images__scroll .scroll__circle2,
+.ourRoutes-wrapper .images__scroll .scroll__circle3 {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+}
+.ourRoutes-wrapper .images__scroll .scroll__circle3 {
+  margin-right: 0;
+}
+.ourRoutes-wrapper .images__scroll .scroll__circle1 {
+  background-color: #037E8C;
+}
+.ourRoutes-wrapper .images__scroll .scroll__circle2,
+.ourRoutes-wrapper .images__scroll .scroll__circle3 {
+  background-color: #121214;
+}
+.ourRoutes-wrapper .images__scroll .scroll__line {
+  margin-left: 37px;
+  border: 0.001em solid #121214;
+  width: 54px;
+  height: 0px;
+}
+.ourRoutes-wrapper .images__scroll .scroll__text {
+  color: #121214;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  margin-left: 14px;
 }/*# sourceMappingURL=style.css.map */
