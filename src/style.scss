@@ -1,0 +1,99 @@
+@import 'reset';
+@import 'root';
+
+// Блок вопросы-ответы 
+
+.question {
+    padding: 71px 0 85px;
+
+    &__title {
+        text-align: center;
+        @extend %style_h2;
+        margin-bottom: 48px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &_answers {
+            flex-basis: 41.38%;
+        }
+
+        &_ask {
+            text-align: center;
+            flex-basis: 50%;
+            max-width: 378px;
+            padding-left: 80px;
+
+            img {
+                display: inline-block;
+                width: 94px;
+                padding-bottom: 14px;
+            }
+
+            p {
+                @extend %style_p;
+                line-height: 17px;
+                margin-bottom: 14px;
+            }
+
+            &_vector-ask {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            button {
+                font: 600 14px/130% 'Montserrat';
+                color: #FFFFFF;
+                background: #037E8C;
+                border-radius: 9px;
+                padding: 13px 33px 14px;
+                border: 1px solid #037E8C;
+            }
+        }
+    }
+
+}
+
+// Блок дополнительные услуги
+
+.additional-services {
+    padding-bottom: 109px;
+
+    &__title {
+        @extend %style_h2;
+    }
+
+    &__wrapper {
+        display: grid;
+        margin-top: 55px;
+        grid-template: repeat(auto-fit, 309px)/ repeat(auto-fill, 303px);
+        justify-content: center;
+        gap: 27px 29px;
+
+        div {
+            background: #f4f4f4;
+            border-radius: 9px;
+            min-height: 309px;
+            padding-bottom: 26px;
+            
+            & img {
+                width: 100%;
+                border-radius: 9px 9px 0px 0px;
+                margin-bottom: 21px;
+            }
+
+            & p{
+                font: 600 18px/130% 'Montserrat';
+                color: #037E8C;
+                margin-left: 24px;
+                max-width: 80%;
+            }
+        }
+
+        
+    }
+}

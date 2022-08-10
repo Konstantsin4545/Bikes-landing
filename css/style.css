@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.additional-services__title, .question__title {
+  font: 700 36px/140.4% "Montserrat";
+  color: #121214;
+  text-align: center;
+}
+
+.question__wrapper_ask p {
+  font: 400 14px/21px "Montserrat";
+  color: #121214;
+}
+
+.question {
+  padding: 71px 0 85px;
+}
+.question__title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.question__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.question__wrapper_answers {
+  flex-basis: 41.38%;
+}
+.question__wrapper_ask {
+  text-align: center;
+  flex-basis: 50%;
+  max-width: 378px;
+  padding-left: 80px;
+}
+.question__wrapper_ask img {
+  display: inline-block;
+  width: 94px;
+  padding-bottom: 14px;
+}
+.question__wrapper_ask p {
+  line-height: 17px;
+  margin-bottom: 14px;
+}
+.question__wrapper_ask_vector-ask {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.question__wrapper_ask button {
+  font: 600 14px/130% "Montserrat";
+  color: #FFFFFF;
+  background: #037E8C;
+  border-radius: 9px;
+  padding: 13px 33px 14px;
+  border: 1px solid #037E8C;
+}
+
+.additional-services {
+  padding-bottom: 109px;
+}
+.additional-services__wrapper {
+  display: grid;
+  margin-top: 55px;
+  grid-template: repeat(auto-fit, 309px)/repeat(auto-fill, 303px);
+  justify-content: center;
+  gap: 27px 29px;
+}
+.additional-services__wrapper div {
+  background: #f4f4f4;
+  border-radius: 9px;
+  min-height: 309px;
+  padding-bottom: 26px;
+}
+.additional-services__wrapper div img {
+  width: 100%;
+  border-radius: 9px 9px 0px 0px;
+  margin-bottom: 21px;
+}
+.additional-services__wrapper div p {
+  font: 600 18px/130% "Montserrat";
+  color: #037E8C;
+  margin-left: 24px;
+  max-width: 80%;
+}/*# sourceMappingURL=style.css.map */
