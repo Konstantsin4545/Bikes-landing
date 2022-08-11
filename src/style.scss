@@ -79,14 +79,14 @@
             border-radius: 9px;
             min-height: 309px;
             padding-bottom: 26px;
-            
+
             & img {
                 width: 100%;
                 border-radius: 9px 9px 0px 0px;
                 margin-bottom: 21px;
             }
 
-            & p{
+            & p {
                 font: 600 18px/130% 'Montserrat';
                 color: #037E8C;
                 margin-left: 24px;
@@ -94,6 +94,155 @@
             }
         }
 
-        
+
+    }
+}
+
+
+// блок футера 
+
+
+.footer {
+    padding-bottom: 27px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 73px;
+
+        &_contacts {
+            border-top: #037E8C solid 3px;
+            flex-basis: 48%;
+
+
+            h2 {
+                @extend %style_h2;
+                text-align: left;
+                padding: 15px 0 64px;
+            }
+
+            h3 {
+                font: 600 24px/151.19% 'Montserrat';
+                color: #121214;
+                padding-bottom: 16px;
+            }
+
+            i {
+                display: inline-block;
+                padding: 10px;
+                background-color: #121214;
+                border-radius: 90%;
+                color: #f4f4f4;
+                width: 50px;
+                font-size: 30px;
+                margin-right: 21px;
+            }
+
+            &_info {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                &_sity {
+                    flex-basis: 55%;
+                }
+
+                &_time {
+                    flex-basis: 40%;
+                }
+
+                #sity::before {
+                    content: url(../images/icon-house.svg);
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 45px;
+                    margin-right: 16px;
+                }
+
+                #mail::before {
+                    content: url(../images/icon-mail.svg);
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 45px;
+                    margin-right: 16px;
+                }
+
+                #number::before {
+                    content: url(../images/icon-phone.svg);
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 45px;
+                    margin-right: 16px;
+                }
+
+                #time::before {
+                    content: url(../images/icon-time.svg);
+                    float: left;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 45px;
+                    margin-right: 16px;
+                }
+
+
+                p {
+                    font: 400 18px/124.19% 'Montserrat';
+                    color: #121214;
+                    width: 100%;
+                    margin-bottom: 36px;
+                }
+            }
+        }
+
+        &_maps {
+            width: 48%;
+            position: relative;
+
+            & iframe {
+                width: 112%;
+            }
+        }
+
+    }
+
+
+    #cfmoto {
+        text-align: center;
+        margin-top: 21px;
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: #037E8C solid 3px;
+        border-bottom: #037E8C solid 3px;
+
+        &_logo {
+            content: url(../images/icon-logo.png);
+            display: inline-block;
+            width: 65px;
+            margin-left: 113px;
+        }
+
+        &_links {
+            width: 75%;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                a {
+                    text-decoration: none;
+                    font: 600 14px/104.7% 'Montserrat';
+                    color: #121214;
+                }
+            }
+
+        }
     }
 }

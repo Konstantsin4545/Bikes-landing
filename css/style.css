@@ -90,7 +90,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.additional-services__title, .question__title {
+.footer__wrapper_contacts h2, .additional-services__title, .question__title {
   font: 700 36px/140.4% "Montserrat";
   color: #121214;
   text-align: center;
@@ -171,4 +171,122 @@ body {
   color: #037E8C;
   margin-left: 24px;
   max-width: 80%;
+}
+
+.footer {
+  padding-bottom: 27px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 73px;
+}
+.footer__wrapper_contacts {
+  border-top: #037E8C solid 3px;
+  flex-basis: 48%;
+}
+.footer__wrapper_contacts h2 {
+  text-align: left;
+  padding: 15px 0 64px;
+}
+.footer__wrapper_contacts h3 {
+  font: 600 24px/151.19% "Montserrat";
+  color: #121214;
+  padding-bottom: 16px;
+}
+.footer__wrapper_contacts i {
+  display: inline-block;
+  padding: 10px;
+  background-color: #121214;
+  border-radius: 90%;
+  color: #f4f4f4;
+  width: 50px;
+  font-size: 30px;
+  margin-right: 21px;
+}
+.footer__wrapper_contacts_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__wrapper_contacts_info_sity {
+  flex-basis: 55%;
+}
+.footer__wrapper_contacts_info_time {
+  flex-basis: 40%;
+}
+.footer__wrapper_contacts_info #sity::before {
+  content: url(../images/icon-house.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  margin-right: 16px;
+}
+.footer__wrapper_contacts_info #mail::before {
+  content: url(../images/icon-mail.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  margin-right: 16px;
+}
+.footer__wrapper_contacts_info #number::before {
+  content: url(../images/icon-phone.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  margin-right: 16px;
+}
+.footer__wrapper_contacts_info #time::before {
+  content: url(../images/icon-time.svg);
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  margin-right: 16px;
+}
+.footer__wrapper_contacts_info p {
+  font: 400 18px/124.19% "Montserrat";
+  color: #121214;
+  width: 100%;
+  margin-bottom: 36px;
+}
+.footer__wrapper_maps {
+  width: 48%;
+  position: relative;
+}
+.footer__wrapper_maps iframe {
+  width: 112%;
+}
+.footer #cfmoto {
+  text-align: center;
+  margin-top: 21px;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #037E8C solid 3px;
+  border-bottom: #037E8C solid 3px;
+}
+.footer__menu_logo {
+  content: url(../images/icon-logo.png);
+  display: inline-block;
+  width: 65px;
+  margin-left: 113px;
+}
+.footer__menu_links {
+  width: 75%;
+}
+.footer__menu_links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__menu_links ul a {
+  text-decoration: none;
+  font: 600 14px/104.7% "Montserrat";
+  color: #121214;
 }/*# sourceMappingURL=style.css.map */
