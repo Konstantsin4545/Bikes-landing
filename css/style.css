@@ -163,6 +163,11 @@ body {
   margin: 0 auto;
 }
 
+main {
+  position: relative;
+  overflow: hidden;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -174,6 +179,9 @@ header {
   justify-content: space-between;
   padding-top: 12px;
   width: 100%;
+}
+.header-wrapper .menu {
+  display: none;
 }
 
 .header__navigation {
@@ -244,6 +252,7 @@ header {
   background-image: linear-gradient(0deg, rgba(39, 39, 41, 0.6), rgba(39, 39, 41, 0.6)), url(../images/background-excursions.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .excursions-wrapper {
@@ -369,11 +378,6 @@ header {
   line-height: 21px;
 }
 
-main {
-  position: relative;
-  overflow: hidden;
-}
-
 .ourRoutes {
   background-color: #F4F4F4;
   padding-top: 57px;
@@ -389,13 +393,12 @@ main {
   color: #121214;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 25px;
 }
 .ourRoutes__images, .ourRoutes__images2 {
   display: flex;
   position: relative;
   align-items: center;
-  width: 51%;
+  width: 49%;
 }
 .ourRoutes__images .images__photo1, .ourRoutes__images2 .images__photo1 {
   margin-right: 23px;
@@ -404,6 +407,9 @@ main {
   position: absolute;
   right: -268px;
   top: 34px;
+}
+.ourRoutes__images .images__photo3 img, .ourRoutes__images2 .images__photo3 img {
+  display: inline-block;
 }
 .ourRoutes__images2 {
   flex-direction: row-reverse;
@@ -440,7 +446,6 @@ main {
 .ourRoutes-wrapper .ourRoutes-wrapper__text:nth-child(2) {
   margin-right: 0;
   margin-left: 25px;
-  width: 51%;
 }
 .ourRoutes-wrapper__text h3 {
   font-size: 36px;
@@ -462,6 +467,17 @@ main {
   top: 50%;
   left: 0;
 }
+.ourRoutes-wrapper__text h3::after {
+  content: "";
+  width: 81px;
+  height: 0px;
+  border: 1px solid #037E8C;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: none;
+}
 .ourRoutes-wrapper__text .text__margin {
   margin-left: 111px;
 }
@@ -474,7 +490,12 @@ main {
   margin-bottom: 13px;
 }
 .ourRoutes-wrapper__text .text__margin .text__routes::after {
-  content: url(../images/routes-ourRoutes.svg);
+  content: "";
+  background-image: url(../images/routes-ourRoutes.svg);
+  background-size: 24px 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
   margin-left: 16px;
 }
 .ourRoutes-wrapper__text .text__margin .text__margin:nth-child(3) .text__stops {
@@ -541,8 +562,13 @@ main {
   margin-bottom: 35px;
 }
 .ourRoutes-wrapper .text__value::after {
-  content: url(../images/ruble.svg);
+  content: "";
+  background-image: url(../images/ruble.svg);
   margin-left: 12px;
+  display: inline-block;
+  background-size: 10px 14px;
+  width: 10px;
+  height: 14px;
 }
 
 .text__learn-button {
@@ -575,16 +601,50 @@ main {
   cursor: pointer;
 }
 
+.ourRoutes__images2 {
+  position: relative;
+}
 .ourRoutes__images2 .images2__scroll {
   position: absolute;
-  left: 440px;
+  left: 0;
   bottom: -54px;
   display: flex;
   align-items: center;
 }
+.ourRoutes__images2 .images2__scroll .scroll__circle1,
+.ourRoutes__images2 .images2__scroll .scroll__circle2,
+.ourRoutes__images2 .images2__scroll .scroll__circle3 {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 15px;
+}
+.ourRoutes__images2 .images2__scroll .scroll__circle3 {
+  margin-right: 0;
+}
+.ourRoutes__images2 .images2__scroll .scroll__circle1 {
+  background-color: #037E8C;
+}
+.ourRoutes__images2 .images2__scroll .scroll__circle2,
+.ourRoutes__images2 .images2__scroll .scroll__circle3 {
+  background-color: #121214;
+}
+.ourRoutes__images2 .images2__scroll .scroll__line {
+  margin-left: 37px;
+  border: 0.001em solid #121214;
+  width: 54px;
+  height: 0px;
+}
+.ourRoutes__images2 .images2__scroll .scroll__text {
+  color: #121214;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  margin-left: 14px;
+}
 
-.images__scroll,
-.images2__scroll {
+.images__scroll {
   bottom: -44px;
   left: 0;
   position: absolute;
@@ -593,38 +653,29 @@ main {
 }
 .images__scroll .scroll__circle1,
 .images__scroll .scroll__circle2,
-.images__scroll .scroll__circle3,
-.images2__scroll .scroll__circle1,
-.images2__scroll .scroll__circle2,
-.images2__scroll .scroll__circle3 {
+.images__scroll .scroll__circle3 {
   border-radius: 50%;
   width: 8px;
   height: 8px;
   margin-right: 15px;
 }
-.images__scroll .scroll__circle3,
-.images2__scroll .scroll__circle3 {
+.images__scroll .scroll__circle3 {
   margin-right: 0;
 }
-.images__scroll .scroll__circle1,
-.images2__scroll .scroll__circle1 {
+.images__scroll .scroll__circle1 {
   background-color: #037E8C;
 }
 .images__scroll .scroll__circle2,
-.images__scroll .scroll__circle3,
-.images2__scroll .scroll__circle2,
-.images2__scroll .scroll__circle3 {
+.images__scroll .scroll__circle3 {
   background-color: #121214;
 }
-.images__scroll .scroll__line,
-.images2__scroll .scroll__line {
+.images__scroll .scroll__line {
   margin-left: 37px;
   border: 0.001em solid #121214;
   width: 54px;
   height: 0px;
 }
-.images__scroll .scroll__text,
-.images2__scroll .scroll__text {
+.images__scroll .scroll__text {
   color: #121214;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
@@ -666,4 +717,291 @@ main {
 }
 .test h2, .test p {
   color: #fff;
+}
+
+@media (max-width: 1320px) {
+  .container {
+    max-width: 95%;
+  }
+}
+@media (max-width: 1224px) {
+  .excursions-wrapper h1 {
+    width: 100%;
+  }
+  .header__navigation {
+    width: 90%;
+  }
+  .advantages-wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1065px) {
+  .ourRoutes-wrapper {
+    flex-wrap: wrap;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text {
+    margin: 0 auto;
+    width: 338px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text .text__learn-button {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 960px) {
+  .header__navigation {
+    flex-wrap: wrap;
+  }
+  .header__navigation ul {
+    width: 100%;
+  }
+  .header__navigation .navigation__contacts {
+    margin-left: auto;
+    margin-right: 0;
+    display: inline-block;
+  }
+  .excursions-wrapper .choose-button {
+    font-size: 14px;
+    padding: 14px 0 16px 16px;
+    font-weight: 600;
+  }
+  .excursions-wrapper .choose-button::after {
+    margin-left: 14px;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    padding: 3px 5px 3px 5px;
+  }
+  .ourRoutes-wrapper2 {
+    flex-direction: column-reverse;
+  }
+  .advantages-wrapper__card > div {
+    margin-bottom: 20px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text:nth-child(2) {
+    width: 338px;
+  }
+  .ourRoutes {
+    padding-top: 35px;
+  }
+  .ourRoutes h2 {
+    font-size: 24px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text:nth-child(2) {
+    width: 340px;
+    margin: 0 auto;
+  }
+  .ourRoutes-wrapper .ourRoutes__images {
+    position: relative;
+  }
+  .ourRoutes-wrapper .ourRoutes__images .images__photo1 {
+    min-width: 58%;
+    margin-right: 12px;
+  }
+  .ourRoutes-wrapper .ourRoutes__images .images__photo2, .ourRoutes-wrapper .ourRoutes__images .images2__photo2 {
+    min-width: 40%;
+  }
+  .ourRoutes-wrapper .ourRoutes__images .images2__photo3 {
+    position: relative;
+  }
+  .ourRoutes-wrapper .ourRoutes__images .images__photo3 {
+    position: relative;
+    right: -12px;
+    top: 0px;
+    min-width: 40%;
+  }
+  .ourRoutes-wrapper .ourRoutes__images2 {
+    flex-direction: row;
+    width: 94%;
+  }
+  .ourRoutes-wrapper .ourRoutes__images2 .images2__photo3 {
+    position: relative;
+    right: -12px;
+    top: 0px;
+    min-width: 40%;
+    left: auto;
+  }
+  .ourRoutes-wrapper .ourRoutes__images2 .images2__photo2, .ourRoutes-wrapper .ourRoutes__images2 .images2__photo1 {
+    min-width: 40%;
+  }
+  .ourRoutes-wrapper .ourRoutes__images2 .images2__photo1 {
+    margin-left: 0;
+    margin-right: 12px;
+    min-width: 58%;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text {
+    margin-bottom: 41px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text h3 {
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text h3::before {
+    display: none;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text h3:after {
+    display: inline-block;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text .text__margin {
+    margin-left: 0;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text .text__value {
+    font-size: 18px;
+    margin-bottom: 17px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text .text__characteristic .characteristic__time,
+.ourRoutes-wrapper .ourRoutes-wrapper__text .text__characteristic .characteristic__distance {
+    margin-bottom: 7px;
+  }
+  .ourRoutes-wrapper .ourRoutes-wrapper__text p {
+    font-size: 14px;
+  }
+  .ourRoutes-wrapper .text__routes {
+    font-size: 16px;
+  }
+  .ourRoutes-wrapper .text__routes::after {
+    display: inline-block;
+    background-size: 22px 22px;
+    margin-left: 7px;
+    width: 22px;
+    height: 22px;
+  }
+  .ourRoutes-wrapper .text__stops {
+    font-size: 14px;
+    margin-bottom: 27px;
+    line-height: 22px;
+  }
+  .ourRoutes-wrapper .text__learn-button {
+    padding: 12px 39px;
+    margin-right: 0;
+  }
+  .ourRoutes-wrapper .text__reserve-button {
+    padding: 12px 24px;
+  }
+  .ourRoutes-wrapper .ourRoutes__images {
+    width: 94%;
+  }
+  .test {
+    padding: 45px 0 49px;
+  }
+  .test h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .test p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 33px;
+  }
+  .ourRoutes-back {
+    padding-bottom: 82px;
+  }
+}
+@media (max-width: 730px) {
+  .header-wrapper {
+    align-items: flex-start;
+    margin-top: 9px;
+    padding-top: 0;
+  }
+  .excursions-wrapper {
+    padding: 162px 0 77px;
+    width: 294px;
+    margin: 0 auto;
+  }
+  .excursions-wrapper h1 {
+    font-size: 36px;
+    line-height: 45px;
+    width: 294px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .excursions-wrapper .excursions-wrapper__text {
+    width: 78%;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 42px;
+  }
+  .excursions-wrapper .choose-button {
+    margin-bottom: 101px;
+  }
+  .excursions-wrapper .scroll {
+    position: static;
+    transform: none;
+  }
+  .header-wrapper .header__navigation {
+    display: none;
+  }
+  .header-wrapper .menu {
+    display: inline-block;
+    background: transparent;
+    border-style: none;
+    margin-top: 15px;
+  }
+  .advantages-wrapper {
+    padding: 30px 0 44px;
+  }
+  .advantages-wrapper .advantages-wrapper__card > div h2 {
+    line-height: 20px;
+  }
+  .advantages-wrapper .advantages-wrapper__card > div p {
+    line-height: 16px;
+  }
+  .advantages-wrapper .advantages-wrapper__card > div h2 {
+    font-size: 16px;
+  }
+  .advantages-wrapper .advantages-wrapper__card > div p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .advantages-wrapper {
+    justify-content: flex-start;
+  }
+  .advantages-wrapper .advantages-wrapper__card {
+    width: 45%;
+  }
+  .advantages-wrapper .advantages-wrapper__card > div {
+    margin-bottom: 19px;
+  }
+  .advantages-wrapper .advantages-wrapper__card img {
+    margin-bottom: 14px;
+  }
+  .advantages-wrapper .advantages-wrapper__card h2 {
+    margin-bottom: 18px;
+  }
+  .ourRoutes-wrapper .ourRoutes__images2 .images2__photo1 {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .header-wrapper .header__logo img {
+    height: 64px;
+  }
+  .advantages-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .advantages-wrapper .advantages-wrapper__card {
+    width: 35%;
+    margin-right: 20px;
+  }
+  .advantages-wrapper .advantages-wrapper__card:last-child {
+    width: 35%;
+  }
+}
+@media (max-width: 600px) {
+  .advantages-wrapper {
+    width: 100%;
+  }
+  .advantages-wrapper .advantages-wrapper__card {
+    width: 160px;
+    margin-right: 0;
+  }
+  .advantages-wrapper .advantages-wrapper__card:last-child {
+    width: 160px;
+  }
 }/*# sourceMappingURL=style.css.map */
