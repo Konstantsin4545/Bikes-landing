@@ -723,6 +723,16 @@ header {
   .container {
     max-width: 95%;
   }
+  .ourRoutes__images .images__photo3 {
+    position: relative;
+    right: -12px;
+    top: 0;
+  }
+  .ourRoutes__images2 .images2__photo3 {
+    position: relative;
+    left: -12px;
+    top: 0;
+  }
 }
 @media (max-width: 1224px) {
   .excursions-wrapper h1 {
@@ -797,7 +807,8 @@ header {
     min-width: 58%;
     margin-right: 12px;
   }
-  .ourRoutes-wrapper .ourRoutes__images .images__photo2, .ourRoutes-wrapper .ourRoutes__images .images2__photo2 {
+  .ourRoutes-wrapper .ourRoutes__images .images__photo2,
+.ourRoutes-wrapper .ourRoutes__images .images2__photo2 {
     min-width: 40%;
   }
   .ourRoutes-wrapper .ourRoutes__images .images2__photo3 {
@@ -820,7 +831,8 @@ header {
     min-width: 40%;
     left: auto;
   }
-  .ourRoutes-wrapper .ourRoutes__images2 .images2__photo2, .ourRoutes-wrapper .ourRoutes__images2 .images2__photo1 {
+  .ourRoutes-wrapper .ourRoutes__images2 .images2__photo2,
+.ourRoutes-wrapper .ourRoutes__images2 .images2__photo1 {
     min-width: 40%;
   }
   .ourRoutes-wrapper .ourRoutes__images2 .images2__photo1 {
@@ -903,6 +915,9 @@ header {
     align-items: flex-start;
     margin-top: 9px;
     padding-top: 0;
+    position: absolute;
+    top: 0;
+    z-index: -5;
   }
   .excursions-wrapper {
     padding: 162px 0 77px;
@@ -937,7 +952,7 @@ header {
     display: inline-block;
     background: transparent;
     border-style: none;
-    margin-top: 15px;
+    margin: 15px 6px 0 0;
   }
   .advantages-wrapper {
     padding: 30px 0 44px;
@@ -1004,4 +1019,64 @@ header {
   .advantages-wrapper .advantages-wrapper__card:last-child {
     width: 160px;
   }
+}
+.big-menu-back {
+  background-color: rgb(95, 95, 110);
+  position: relative;
+  width: 100%;
+  padding: 11px 0 167px;
+  display: none;
+}
+.big-menu-back:target {
+  display: block;
+}
+.big-menu-back .learn-more {
+  border-style: none;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.big-menu-back .header__navigation {
+  width: 100%;
+  padding-top: 0;
+}
+.big-menu-back .header__navigation ul {
+  display: block;
+  margin-bottom: 55px;
+}
+.big-menu-back .header__navigation ul li {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-bottom: 14px;
+  position: relative;
+}
+.big-menu-back .header__navigation ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.big-menu-back .header__navigation .navigation__contacts {
+  margin: 0;
+}
+
+.big-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.big-menu img {
+  display: inline-block;
+  width: 50px;
+  margin-bottom: 29px;
+}
+.big-menu .cross-menu {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-top: 11px;
 }/*# sourceMappingURL=style.css.map */
