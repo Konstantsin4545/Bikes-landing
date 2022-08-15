@@ -1,0 +1,413 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0;
+}
+
+.container-excursion {
+  max-width: 1106px;
+  margin: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.excursion__reservation h2, .excursion__prise h2, .excursion__about-route h2, .excursion__rio_route-characteristics h2 {
+  font: 600 24px/29px "Montserrat";
+  color: #121214;
+  max-width: 90%;
+}
+
+main {
+  background: rgba(18, 18, 20, 0.8);
+  padding: 117px 0 63px;
+}
+
+.excursion {
+  position: relative;
+  background-color: white;
+  border-radius: 9px;
+  padding-top: 47px;
+}
+.excursion__logo {
+  display: none;
+  position: absolute;
+  width: 50px;
+  top: -100px;
+  left: 10px;
+}
+.excursion__close {
+  position: absolute;
+  background: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  top: -46px;
+  right: 10px;
+}
+.excursion__rio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 69px;
+}
+.excursion__rio #line-rio {
+  margin-top: 10px;
+  background-color: #037E8C;
+  width: 6.23%;
+  height: 4px;
+}
+.excursion__rio_route-characteristics {
+  flex-basis: 41.77%;
+}
+.excursion__rio_route-characteristics h1 {
+  font: 600 36px/108.7% "Montserrat";
+  color: #121214;
+  margin-bottom: 31px;
+}
+.excursion__rio_route-characteristics i {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #037E8C;
+}
+.excursion__rio_route-characteristics p {
+  font: 400 16px/108.7% "Montserrat";
+  text-transform: uppercase;
+  color: #121214;
+  margin-bottom: 9px;
+}
+.excursion__rio_route-characteristics p span {
+  text-transform: none;
+  font-weight: 600;
+}
+.excursion__rio_route-characteristics h2 {
+  margin: 32px 0 13px;
+  text-transform: uppercase;
+}
+.excursion__rio_route-characteristics #route-rio {
+  font: 400 14px/160% "Montserrat";
+  color: #121214;
+  width: 95%;
+  text-transform: none;
+}
+.excursion__rio_route-characteristics a {
+  display: inline-block;
+  margin-top: 43px;
+  text-decoration: none;
+  padding: 14px 25px;
+  border: #037E8C solid 2px;
+  border-radius: 9px;
+  color: #037E8C;
+  font: 600 14px/130% "Montserrat";
+}
+.excursion__rio_route-characteristics a:hover {
+  background: #037E8C;
+  color: aliceblue;
+}
+.excursion__rio_photo {
+  flex-basis: 49%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.excursion__rio_photo img {
+  display: inline-block;
+  width: 48.5%;
+}
+.excursion__rio_photo #river {
+  width: 33.6%;
+}
+.excursion__about-route h2 {
+  margin-bottom: 27px;
+}
+.excursion__about-route p {
+  font: 400 16px/160% "Montserrat";
+  color: #121214;
+  margin-bottom: 27px;
+}
+.excursion__prise {
+  padding-bottom: 74px;
+}
+.excursion__prise h2 {
+  margin-bottom: 45px;
+}
+.excursion__prise_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 303px);
+  justify-content: center;
+  gap: 27px 29px;
+}
+.excursion__prise_wrapper div:hover {
+  background: #c6c5c5;
+}
+.excursion__prise_wrapper div {
+  position: relative;
+  width: 303px;
+  min-height: 294px;
+  background-color: #f4f4f4;
+  border-radius: 9px;
+  padding-bottom: 9px;
+}
+.excursion__prise_wrapper div img {
+  width: 303px;
+  margin-bottom: 19px;
+  border-radius: 9px 9px 0px 0px;
+}
+.excursion__prise_wrapper div p {
+  text-align: center;
+  font: 400 14px/130% "Montserrat";
+  color: #121214;
+}
+.excursion__prise_wrapper div #transport-price {
+  font: 700 20px/130% "Montserrat";
+  color: #037E8C;
+}
+.excursion__prise_wrapper div #transport-price i {
+  font-size: 15px;
+}
+.excursion__prise_wrapper div #moto-info {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 45%;
+  background-image: url(../images/vector-info-price.png);
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  top: 8px;
+  left: 8px;
+}
+.excursion__prise_wrapper div #moto-info:hover {
+  background: #ffffff;
+}
+.excursion__reservation {
+  padding: 55px 0px 98px;
+  background-image: url(../images/reservation-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 9px 9px;
+}
+.excursion__reservation h2 {
+  margin-bottom: 32px;
+}
+.excursion__reservation form button {
+  display: block;
+  margin-top: 32px;
+  font: 600 14px/130% "Montserrat";
+  color: #FFFFFF;
+  background-color: #037E8C;
+  padding: 14px 29px;
+  border: #037E8C solid 1px;
+  border-radius: 9px;
+}
+.excursion__reservation_wrapper {
+  max-width: 800px;
+  display: grid;
+  grid-template: repeat(auto-fit, 74px)/repeat(auto-fit, 350px);
+  justify-content: left;
+  gap: 10px 20px;
+}
+.excursion__reservation_wrapper_block {
+  width: 350px;
+}
+.excursion__reservation_wrapper_block label {
+  display: block;
+  font: 500 14px/17px "Montserrat";
+  color: #121214;
+  margin-bottom: 11px;
+}
+.excursion__reservation_wrapper_block div {
+  width: 350px;
+  height: 46px;
+  background-color: #FFFFFF;
+  border: #787878 1px solid;
+  border-radius: 9px;
+}
+.excursion__reservation_wrapper_block div input {
+  padding: 7px 25px;
+  width: 346px;
+  left: 30px;
+  margin: auto;
+  border-radius: 9px;
+  border: none;
+  background: none;
+}
+.excursion__reservation_wrapper_block div input:focus {
+  border: none;
+  outline: none;
+}
+.excursion__reservation_wrapper #name-bookers {
+  background: url(../images/carbon_user-filled.svg);
+  background-position: 5px 12px;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+.excursion__reservation_wrapper #phone-contact {
+  background: url(../images/clarity_phone-handset-solid.svg);
+  background-position: 5px 12px;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 1340px) {
+  .container {
+    max-width: 95%;
+  }
+}
+@media (max-width: 1200px) {
+  .container-excursion {
+    max-width: 95%;
+  }
+}
+@media (max-width: 770px) {
+  .excursion__logo {
+    display: block;
+  }
+  .excursion__close {
+    top: -80px;
+  }
+  .excursion__reservation_wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .excursion__reservation_wrapper_block {
+    width: 100%;
+  }
+  .excursion__reservation_wrapper_block div {
+    width: 100%;
+  }
+  .excursion__reservation_wrapper_block div input {
+    width: 100%;
+  }
+}
+@media (max-width: 715px) {
+  .excursion__rio_route-characteristics h2,
+.excursion__about-route h2,
+.excursion__prise h2,
+.excursion__reservation h2 {
+    font-size: 18px;
+    margin-bottom: 19px;
+  }
+  .excursion {
+    padding-top: 0;
+  }
+  .excursion__reservation {
+    padding-bottom: 37px;
+  }
+  #line-rio {
+    display: none;
+  }
+  .excursion__rio_route-characteristics {
+    flex-basis: 100%;
+    margin: 20px;
+  }
+  .excursion__rio_photo {
+    flex-basis: 100%;
+  }
+  .excursion__prise_wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 19px 10px;
+  }
+  .excursion__prise_wrapper div {
+    width: 100%;
+    min-height: 160px;
+  }
+  .excursion__prise_wrapper div p {
+    font-size: 11px;
+  }
+  .excursion__prise_wrapper div #moto-info {
+    width: 20px;
+    height: 20px;
+  }
+  .excursion__prise_wrapper div #transport-price {
+    font-size: 18px;
+  }
+  .excursion__prise_wrapper div #transport-price i {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=excursion.css.map */

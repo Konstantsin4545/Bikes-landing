@@ -1,0 +1,399 @@
+@import 'reset';
+@import 'root';
+
+main {
+    background: rgba(18, 18, 20, 0.8);
+    padding: 117px 0 63px;
+}
+
+.excursion {
+    position: relative;
+    background-color: #ffff;
+    border-radius: 9px;
+    padding-top: 47px;
+
+    &__logo {
+        display: none;
+        position: absolute;
+        width: 50px;
+        top: -100px;
+        left: 10px;
+
+    }
+
+    &__close {
+        position: absolute;
+        background: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        top: -46px;
+        right: 10px;
+
+    }
+
+    &__rio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 69px;
+
+        & #line-rio {
+            margin-top: 10px;
+            background-color: #037E8C;
+            width: 6.23%;
+            height: 4px;
+        }
+
+        &_route-characteristics {
+            flex-basis: 41.77%;
+
+            h1 {
+                font: 600 36px/108.7% 'Montserrat';
+                color: #121214;
+                margin-bottom: 31px;
+            }
+
+            i {
+                display: inline-block;
+                width: 30px;
+                font-size: 18px;
+                color: #037E8C;
+
+            }
+
+            p {
+                font: 400 16px/108.7% 'Montserrat';
+                text-transform: uppercase;
+                color: #121214;
+                margin-bottom: 9px;
+
+                span {
+                    text-transform: none;
+                    font-weight: 600;
+                }
+            }
+
+            h2 {
+                @extend %style_h2_excursion;
+                margin: 32px 0 13px;
+                text-transform: uppercase;
+            }
+
+            #route-rio {
+                font: 400 14px/160% 'Montserrat';
+                color: #121214;
+                width: 95%;
+                text-transform: none;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 43px;
+                text-decoration: none;
+                padding: 14px 25px;
+                border: #037E8C solid 2px;
+                border-radius: 9px;
+                color: #037E8C;
+                font: 600 14px/130% 'Montserrat';
+
+
+            }
+
+            a:hover {
+                background: #037E8C;
+                color: aliceblue;
+            }
+
+        }
+
+        &_photo {
+            flex-basis: 49%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                display: inline-block;
+                width: 48.5%;
+            }
+
+            #river {
+                width: 33.6%;
+            }
+        }
+
+    }
+
+    &__about-route {
+        h2 {
+            @extend %style_h2_excursion;
+            margin-bottom: 27px;
+        }
+
+        p {
+            font: 400 16px/160% 'Montserrat';
+            color: #121214;
+            margin-bottom: 27px;
+        }
+
+
+    }
+
+    &__prise {
+        padding-bottom: 74px;
+
+        h2 {
+            @extend %style_h2_excursion;
+            margin-bottom: 45px;
+        }
+
+        &_wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 303px);
+            justify-content: center;
+            gap: 27px 29px;
+
+            div:hover {
+                background: #c6c5c5;
+            }
+
+            div {
+                position: relative;
+                width: 303px;
+                min-height: 294px;
+                background-color: #f4f4f4;
+                border-radius: 9px;
+                padding-bottom: 9px;
+
+                img {
+                    width: 303px;
+                    margin-bottom: 19px;
+                    border-radius: 9px 9px 0px 0px;
+                }
+
+                p {
+                    text-align: center;
+                    font: 400 14px/130% 'Montserrat';
+                    color: #121214;
+                }
+
+                #transport-price {
+                    font: 700 20px/130% 'Montserrat';
+                    color: #037E8C;
+
+                    i {
+                        font-size: 15px;
+                    }
+                }
+
+
+                #moto-info {
+                    position: absolute;
+                    background-color: rgba(255, 255, 255, 0);
+                    border: none;
+                    border-radius: 45%;
+                    background-image: url(../images/vector-info-price.png);
+                    cursor: pointer;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 33px;
+                    height: 33px;
+                    top: 8px;
+                    left: 8px;
+                }
+
+                #moto-info:hover {
+                    background: #ffffff;
+                }
+            }
+
+        }
+
+    }
+
+    &__reservation {
+        padding: 55px 0px 98px;
+        background-image: url(../images/reservation-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 9px 9px;
+
+        h2 {
+            @extend %style_h2_excursion;
+            margin-bottom: 32px;
+        }
+
+        form {
+            button {
+                display: block;
+                margin-top: 32px;
+                font: 600 14px/130% 'Montserrat';
+                color: #FFFFFF;
+                background-color: #037E8C;
+                padding: 14px 29px;
+                border: #037E8C solid 1px;
+                border-radius: 9px;
+
+
+            }
+        }
+
+        &_wrapper {
+            max-width: 800px;
+            display: grid;
+            grid-template: repeat(auto-fit, 74px)/ repeat(auto-fit, 350px);
+            justify-content: left;
+            gap: 10px 20px;
+
+            &_block {
+                width: 350px;
+
+                label {
+                    display: block;
+                    font: 500 14px/17px 'Montserrat';
+                    color: #121214;
+                    margin-bottom: 11px;
+                }
+
+                div {
+                    width: 350px;
+                    height: 46px;
+                    background-color: #FFFFFF;
+                    border: #787878 1px solid;
+                    border-radius: 9px;
+
+                    input {
+                        padding: 7px 25px;
+                        width: 346px;
+                        left: 30px;
+                        margin: auto;
+                        border-radius: 9px;
+                        border: none;
+                        background: none;
+
+                    }
+
+                    input:focus {
+                        border: none;
+                        outline: none;
+                    }
+
+
+                }
+            }
+
+            #name-bookers {
+                background: url(../images/carbon_user-filled.svg);
+                background-position: 5px 12px;
+                background-repeat: no-repeat;
+                background-color: #FFFFFF;
+            }
+
+            #phone-contact {
+                background: url(../images/clarity_phone-handset-solid.svg);
+                background-position: 5px 12px;
+                background-repeat: no-repeat;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container-excursion {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 770px) {
+    .excursion {
+        &__logo {
+            display: block;
+        }
+
+        &__close {
+            top: -80px;
+        }
+
+    }
+
+    .excursion__reservation_wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+
+        &_block {
+            width: 100%;
+
+            div {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 715px) {
+
+    .excursion__rio_route-characteristics h2,
+    .excursion__about-route h2,
+    .excursion__prise h2,
+    .excursion__reservation h2 {
+        font-size: 18px;
+        margin-bottom: 19px;
+    }
+    .excursion{
+        padding-top: 0;
+    }
+
+    .excursion__reservation{
+        padding-bottom: 37px;
+    }
+
+    #line-rio {
+        display: none;
+    }
+
+    .excursion__rio_route-characteristics {
+        flex-basis: 100%;
+        margin: 20px;
+    }
+    .excursion__rio_photo {
+        flex-basis: 100%;
+    }
+
+    .excursion__prise_wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 19px 10px;
+
+        div {
+            width: 100%;
+            min-height: 160px;
+
+            p {
+                font-size: 11px;
+            }
+
+            #moto-info {
+                width: 20px;
+                height: 20px;
+            }
+
+            #transport-price {
+                font-size: 18px;
+
+                i {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

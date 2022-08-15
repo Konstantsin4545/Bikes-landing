@@ -3,8 +3,34 @@
 
 // Блок вопросы-ответы 
 
+
 .question {
+    position: relative;
+    z-index: 3;
     padding: 71px 0 85px;
+
+    & .bugs {
+        background-image: url(../images/bugs.png);
+        position: absolute;
+        background-size: 100%;
+        width: 350px;
+        height: 256px;
+        z-index: 1;
+        right: -185px;
+        top: -75px;
+    }
+
+    & .spring{
+        background-image: url(../images/spring2.png);
+        position: absolute;
+        background-size: 100%;
+        width: 500px;
+        height: 400px;
+        z-index: 1;
+        left: -170px;
+        bottom: -150px;
+    }
+
 
     &__title {
         text-align: center;
@@ -14,7 +40,7 @@
 
     &__wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
 
         &_answers {
@@ -25,7 +51,7 @@
             text-align: center;
             flex-basis: 50%;
             max-width: 378px;
-            padding-left: 80px;
+            
 
             img {
                 display: inline-block;
@@ -39,10 +65,8 @@
                 margin-bottom: 14px;
             }
 
-            &_vector-ask {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 29px;
+            & #vector-ask {
+                font: 600 24px/29px 'Montserrat'; 
             }
 
             button {
@@ -51,6 +75,7 @@
                 background: #037E8C;
                 border-radius: 9px;
                 padding: 13px 33px 14px;
+                margin-top: 30px;
                 border: 1px solid #037E8C;
             }
         }
@@ -179,8 +204,8 @@
                 #time::before {
                     content: url(../images/icon-time.svg);
                     float: left;
-                    display: inline-block;
-                    vertical-align: middle;
+                    display: block;
+                   
                     width: 45px;
                     margin-right: 16px;
                 }
@@ -211,7 +236,7 @@
         text-align: center;
         margin-top: 21px;
     }
-    
+
     &__menu {
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa34d3b3e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/excursion.css">
+    <title>Экскурсия "РИО"</title>
+</head>
+
+<body>
+    <main>
+        <div class="container excursion">
+            <div class="excursion__logo"><img src="./images/icon-logo.png" alt="moto"></div>
+            <div class="excursion__close">X</div>
+            <section class="excursion__rio">
+                <div id="line-rio"></div>
+                <div class="excursion__rio_route-characteristics">
+                    <h1>Экскурсия “РИО”</h1>
+                    <p><i class="fa-solid fa-clock"></i> Время в пути: <span>1,5 - 2 часа</span></p>
+                    <p><i class="fa-solid fa-location-dot"></i> Расстояние: <span> 20 - 25 км</span></p>
+                    <p><i class="fa-solid fa-star"></i> Сложность: <span> 5***</span></p>
+                    <h2>Маршрут:</h2>
+                    <p id="route-rio">Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис -
+                        -Грозовые Ворота - Шашлыки - Цыгельский водопад (чаша любви) -
+                        -Форсаж</p>
+                    <a href="#">Схема маршрута</a>
+                </div>
+                <div class="excursion__rio_photo">
+                    <img src="./images/excursion-1.png" alt="экскурсия в поле">
+                    <img id="river" src="./images/excursion-2.png" alt="экскурсия по речке">
+                </div>
+            </section>
+            <section class="excursion__about-route container-excursion">
+                <h2>Что посмотрим на маршруте:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue lacus lacus facilisis orci nibh diam.
+                    Nisi, a et sit commodo. Pretium sed consectetur risus elementum, habitasse turpis massa. </p>
+                <p>In sit mi aenean volutpat. Quis lectus nunc nam euismod ultrices aenean. Vitae venenatis ut praesent
+                    neque sed quam mauris elementum. Risus blandit leo ut nullam egestas et porta. Ut lacus arcu
+                    sagittis sit. Gravida et faucibus id tortor augue interdum quam sit diam. Laoreet nulla at et arcu
+                    pellentesque massa placerat elit. Adipiscing in nullam ipsum est. In sit mi aenean volutpat. Quis
+                    lectus nunc nam euismod ultrices aenean. Vitae venenatis ut praesent neque sed quam mauris
+                    elementum. Risus blandit leo ut nullam egestas et porta. Ut lacus arcu sagittis sit. </p>
+            </section>
+            <section class="excursion__prise container-excursion">
+                <h2>Стоимость экскурсии за 1 квадроцикл:</h2>
+                <div class="excursion__prise_wrapper">
+                    <div class="excursion__prise_wrapper_uforce1000">
+                        <img src="./images/uforce-1000-esp.png" alt="UFORCE 1000 EPS (U10 EPS)">
+                        <p>UFORCE 1000 EPS (U10 EPS)</p>
+                        <p id="transport-price">4000 <i class="fa-solid fa-ruble-sign"></i></p>
+                        <button id="moto-info"></button>
+                    </div>
+                    <div class="excursion__prise_wrapper_cforce1000">
+                        <img src="./images/cforce-1000-esp.png" alt="CFORCE 1000 EPS (X10 EPS)">
+                        <p>CFORCE 1000 EPS (X10 EPS)</p>
+                        <p id="transport-price">6000 <i class="fa-solid fa-ruble-sign"></i></p>
+                        <button id="moto-info"></button>
+                    </div>
+                    <div class="excursion__prise_wrapper_cforce600">
+                        <img src="./images/cforce-600-esp.png" alt="CFMOTO CFORCE 600 EPS">
+                        <p>CFMOTO CFORCE 600 EPS</p>
+                        <p id="transport-price">7000 <i class="fa-solid fa-ruble-sign"></i></p>
+                        <button id="moto-info"></button>
+                    </div>
+                    <div class="excursion__prise_wrapper_cforce400l">
+                        <img src="./images/cforce-400l-eps.png" alt="CFORCE 400L EPS (X4 EPS)">
+                        <p>CFORCE 400L EPS (X4 EPS)</p>
+                        <p id="transport-price">8000 <i class="fa-solid fa-ruble-sign"></i></p>
+                        <button id="moto-info"></button>
+                    </div>
+                    <div class="excursion__prise_wrapper_zforce100">
+                        <img src="./images/zforce-1000.png" alt="ZFORCE 1000">
+                        <p>ZFORCE 1000</p>
+                        <p id="transport-price">9000 <i class="fa-solid fa-ruble-sign"></i></p>
+                        <button id="moto-info"></button>
+                    </div>
+                    <div class="excursion__prise_wrapper_cforce1000">
+                        <img src="./images/uforce-1000-esp.png" alt="UFORCE 1000 EPS (U10 EPS)">
+                        <p>UFORCE 1000 EPS (U10 EPS)</p>
+                        <p id="transport-price">4000 <i class="fa-solid fa-ruble-sign"></i></p>
+                        <button id="moto-info"></button>
+                    </div>
+                </div>
+
+            </section>
+            <section class="excursion__reservation">
+                <div class="container-excursion">
+                    <h2>Бронирование онлайн</h2>
+                    <form action="#">
+                        <div class="excursion__reservation_wrapper">
+                            <div class="excursion__reservation_wrapper_block">
+                                <label>Желаемая дата</label>
+                                <div id="date">
+                                    <input type="date">
+                                </div>
+
+                            </div>
+                            <div class="excursion__reservation_wrapper_block">
+                                <label>Количество человек</label>
+                                <div id="amt-peopel">
+                                    <input type="number">
+                                </div>
+
+                            </div>
+                            <div class="excursion__reservation_wrapper_block">
+                                <label>Телефон или WhatsApp</label>
+                                <div id="phone-contact">
+                                    <input type="text">
+                                </div>
+
+                            </div>
+
+                            <div class="excursion__reservation_wrapper_block">
+                                <label>Как к Вам обращаться?</label>
+                                <div id="name-bookers">
+                                    <input type="text">
+                                </div>
+
+                            </div>
+                        </div>
+                        <button>Забронировать</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>
