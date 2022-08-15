@@ -1,0 +1,75 @@
+.team{
+    padding: 64px 0; 
+    
+    h2{
+        @extend %head;
+        margin-bottom: 39px;
+    }
+}
+
+.team-container{
+    position: relative;
+
+    .bumper{
+        position: absolute;
+        right: -301px;
+        top: -182px;
+        z-index: -1;
+    }
+    .canister{
+        position: absolute;
+        left: -296px;
+        top: 85px;
+        z-index: -1;
+    }
+}
+
+.team-wrapper{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(303px, 303px));
+   gap: 28px;
+    
+
+    .colleagues{
+      
+        background-color: #F4F4F4;
+        border-radius: 9px;
+       
+        
+        img{
+            border-radius: 9px;
+            max-width: 100%;
+        }
+        h3{
+            font:700 24px Montserrat;
+            color: #037E8C;
+            margin-top: 17.4px;
+            margin-left: 26px;
+        }
+        p{
+            font: 400 18px Montserrat;
+            color: #121214;
+            margin-left: 26px;
+            margin-bottom: 22px;
+        }
+
+    }
+
+}
+
+
+
+%head{
+    font: 700 36px Montserrat;
+        text-align: center;
+        color: #151515;
+}
+
+
+
+@media(max-width:668px){
+    .team-wrapper{
+        grid-template-columns: repeat(2, minmax(303px, 303px));
+    }
+}

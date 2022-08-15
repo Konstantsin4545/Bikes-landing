@@ -1,0 +1,141 @@
+.certificate {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background: url(../images/certificate.svg) no-repeat;
+  background-size: cover;
+  background-color: #FFF;
+  position: relative;
+  z-index: 6;
+}
+.certificate h2 {
+  margin-bottom: 13px;
+}
+.certificate P {
+  width: 524px;
+}
+.certificate .present {
+  margin: auto;
+  width: 42.9%;
+  font: 500 20px Montserrat;
+  color: #037E8C;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.certificate .cfmoto {
+  position: relative;
+  max-width: 48.9%;
+  padding-top: 35px;
+  padding-bottom: 59px;
+  background-color: #373737;
+  border-radius: 9px;
+}
+.certificate .cfmoto h2 {
+  text-align: right;
+  margin-right: 63px;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #121214;
+}
+.certificate .cfmoto .bow {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.certificate .cfmoto .abstraction {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 9px 0;
+}
+.certificate .cfmoto .kuban {
+  position: absolute;
+  top: 97px;
+  right: 63px;
+}
+.certificate .cfmoto .certificate-text {
+  width: 226px;
+  font: 700 24px Montserrat;
+  color: #FFFFFF;
+  margin-left: 124px;
+}
+.certificate .cfmoto p {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 22px;
+  margin-left: 125px;
+}
+.certificate .gift p {
+  margin-top: 31px;
+}
+.certificate .gift a {
+  margin-top: 31px;
+  padding: 14px 23px;
+}
+.certificate .gift a:hover {
+  background-color: #037E8C;
+  color: #fff;
+}
+
+.certificate-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificate h2 {
+  font: 700 36px Montserrat;
+  text-align: center;
+  color: #151515;
+}
+
+.certificate P {
+  font: 400 18px Montserrat;
+  color: #121214;
+}
+
+.certificate .gift a {
+  font: 600 14px Montserrat;
+  display: inline-block;
+  border: 2px solid #037E8C;
+  border-radius: 9px;
+  color: #037E8C;
+}
+
+@media (max-width: 1240px) {
+  .certificate-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 1300px) {
+  .certificate .cfmoto h2 {
+    font-size: 40px;
+  }
+  .kuban, .bow {
+    max-width: 50%;
+  }
+  .abstraction {
+    max-width: 40%;
+  }
+}
+@media (max-width: 1160px) {
+  .kuban, .bow {
+    max-width: 30%;
+  }
+  .certificate .cfmoto .kuban {
+    right: 30px;
+  }
+}
+@media (max-width: 1080px) {
+  .certificate .cfmoto h2 {
+    font-size: 30px;
+  }
+  .certificate .cfmoto .certificate-text {
+    font-size: 18px;
+  }
+  .certificate .cfmoto {
+    padding-top: 19px;
+    padding-bottom: 23px;
+  }
+}/*# sourceMappingURL=certificate.css.map */

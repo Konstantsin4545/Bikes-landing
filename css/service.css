@@ -1,0 +1,42 @@
+.service {
+  padding-top: 50px;
+  padding-bottom: 82px;
+  background: url(../images/mountains.svg) center no-repeat;
+  background-size: cover;
+  background-color: #F4F4F4;
+}
+.service h2 {
+  font: 700 36px Montserrat;
+  text-align: center;
+  color: #151515;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 43px;
+}
+
+.service-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(413px, 413px));
+  gap: 28px;
+}
+.service-wrapper div {
+  width: 413px;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 9px 27px 14px 5px;
+}
+.service-wrapper div img {
+  margin-right: 18px;
+  margin-bottom: 61px;
+}
+.service-wrapper div p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #121214;
+}
+.service-wrapper div .text-weight {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121214;
+}/*# sourceMappingURL=service.css.map */

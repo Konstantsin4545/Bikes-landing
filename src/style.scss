@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+
+%head{
+    font: 700 36px Montserrat;
+        text-align: center;
+        color: #151515;
+}
+%text{
+    font: 400 18px Montserrat;
+    color: #121214;
+}
+%link{
+    font: 600 14px Montserrat;
+    display: inline-block;
+    border:2px solid #037E8C;
+     border-radius: 9px;
+    color: #037E8C;
+}
+
+@media(max-width:1350px){
+    .container{
+        max-width: 95%;
+    }
+}

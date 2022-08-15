@@ -1,0 +1,52 @@
+.video{
+    padding: 82px 0;
+    background: url(../images/video\ fon.png) center no-repeat;
+    background-size: cover;
+
+    .video-set{
+        margin: auto;
+        max-width: 1078px;
+        height: 430px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/video.jpg) center no-repeat;
+        border: 7px solid #FFFFFF;
+        border-radius: 23px 22px 22px 22px;
+
+        h3{
+            font-weight: 500;
+            font-size: 24px;
+            color: #FFFFFF;
+            padding-top: 30px;
+            padding-left: 40px;
+        }
+        
+        button{
+            display: block;
+            margin: 0 auto;
+         text-align: center;
+           margin-top: 108px;
+
+           img{
+            width: 83px;
+            height: 83px;
+           }
+           .play{
+            display: block;
+            width: 95px;
+            height: 95px;
+            background-image: url(../images/play.svg);
+           background-size: contain;
+           transition: 0.3s;
+           filter: grayscale(100%);
+           }
+        }
+        .play:hover{
+            background-image: url(../images/Vector.png);
+            // width: 83px;
+            // height: 85px; 
+            background-size: contain;
+            filter: grayscale(0%);
+
+
+        }
+    }
+}

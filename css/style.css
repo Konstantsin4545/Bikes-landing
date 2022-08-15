@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 95%;
+  }
+}/*# sourceMappingURL=style.css.map */

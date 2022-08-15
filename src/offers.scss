@@ -1,0 +1,148 @@
+.offers{
+    padding-top: 63px;
+    padding-bottom: 75px;
+
+    h2{
+        @extend %head;
+        color: #373737;
+        margin-bottom: 45px;
+    }
+}
+.offers-container{
+ 
+    position: relative;
+    .bugs{
+        position: absolute;
+        top: -147px;
+        left: -220px;
+    }
+    .detail{
+        position: absolute;
+        top: 60px;
+        right: -240px;
+        z-index: -1;
+    }
+}
+.offers-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+
+    .discount-birthday{
+        position: relative;
+       max-width: 636px;
+        background-color: #F4F4F4;
+        border-radius: 9px;
+
+        h2{
+            font: 800 36px Montserrat;
+            text-align: left;
+            font-weight: 800;
+            color: #037E8C;
+            margin: 26px 56px 19px 333px;
+        }
+        .db{
+            font:700 24px Montserrat;
+            color: #037E8C;
+        }
+        p{
+          @extend %text;
+            color: #373737;
+            margin-left: 333px;
+            margin-right: 15px;
+        }
+
+        img{
+            border-radius: 9px;
+        }
+
+        .offe-vector{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius:0 0 9px 0;
+        }
+    }
+    .customer-discount{
+        position: relative;
+        max-width: 636px;
+        background-color: #F4F4F4;
+        border-radius: 9px;
+        z-index: 1;
+
+        h2{
+            text-align: left;
+            font: 800 36px Montserrat;
+            color: #037E8C;
+            margin: 26px 56px 19px 333px;
+           
+        }
+        
+        a{
+            @extend %link;
+            position: absolute;
+             margin-top: 14px;
+             margin-left: 32px;
+             padding: 14px 45px;
+             z-index: 3;
+             
+ 
+         }
+         a:hover{
+             background-color: #037E8C;
+             color: #fff;
+         }
+        img{
+            border-radius: 9px;
+        }
+        p{
+          @extend %text;
+            color: #373737;
+            margin-left: 333px;
+            margin-right: 15px;
+        }
+       
+    
+        .offe-vector{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius:0 0 9px 0;
+            z-index: 1;
+        }
+    }
+}
+
+
+
+%head{
+    font: 700 36px Montserrat;
+        text-align: center;
+        color: #151515;
+}
+%text{
+    font: 400 18px Montserrat;
+    color: #121214;
+}
+%link{
+    font: 600 14px Montserrat;
+    display: inline-block;
+    border:2px solid #037E8C;
+    border-radius: 9px;
+    color: #037E8C;
+}
+
+
+@media(max-width:1350px){
+    .discount-birthday{
+       margin-right: 20px;
+        margin-bottom: 30px;
+    }  
+    .offers-wrapper{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .customer-discount{
+        margin-right: 20px;
+    }
+}
