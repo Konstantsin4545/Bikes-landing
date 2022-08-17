@@ -241,14 +241,14 @@ main {
   font: 400 14px/130% "Montserrat";
   color: #121214;
 }
-.excursion__prise_wrapper div #transport-price {
+.excursion__prise_wrapper div .transport-price {
   font: 700 20px/130% "Montserrat";
   color: #037E8C;
 }
-.excursion__prise_wrapper div #transport-price i {
+.excursion__prise_wrapper div .transport-price i {
   font-size: 15px;
 }
-.excursion__prise_wrapper div #moto-info {
+.excursion__prise_wrapper div .moto-info {
   position: absolute;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -262,7 +262,7 @@ main {
   top: 8px;
   left: 8px;
 }
-.excursion__prise_wrapper div #moto-info:hover {
+.excursion__prise_wrapper div .moto-info:hover {
   background: #ffffff;
 }
 .excursion__reservation {
@@ -400,14 +400,14 @@ main {
   .excursion__prise_wrapper div p {
     font-size: 11px;
   }
-  .excursion__prise_wrapper div #moto-info {
+  .excursion__prise_wrapper div .moto-info {
     width: 20px;
     height: 20px;
   }
-  .excursion__prise_wrapper div #transport-price {
+  .excursion__prise_wrapper div .transport-price {
     font-size: 18px;
   }
-  .excursion__prise_wrapper div #transport-price i {
+  .excursion__prise_wrapper div .transport-price i {
     font-size: 13px;
   }
 }/*# sourceMappingURL=excursion.css.map */

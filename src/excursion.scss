@@ -177,7 +177,7 @@ main {
                     color: #121214;
                 }
 
-                #transport-price {
+                .transport-price {
                     font: 700 20px/130% 'Montserrat';
                     color: #037E8C;
 
@@ -187,7 +187,7 @@ main {
                 }
 
 
-                #moto-info {
+                .moto-info {
                     position: absolute;
                     background-color: rgba(255, 255, 255, 0);
                     border: none;
@@ -202,7 +202,7 @@ main {
                     left: 8px;
                 }
 
-                #moto-info:hover {
+                .moto-info:hover {
                     background: #ffffff;
                 }
             }
@@ -382,12 +382,12 @@ main {
                 font-size: 11px;
             }
 
-            #moto-info {
+            .moto-info {
                 width: 20px;
                 height: 20px;
             }
 
-            #transport-price {
+            .transport-price {
                 font-size: 18px;
 
                 i {
