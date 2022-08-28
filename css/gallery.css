@@ -1,6 +1,8 @@
 .gallery {
+  max-width: 100%;
   padding-top: 63px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 .gallery h2 {
   font: 700 36px Montserrat;
@@ -9,28 +11,15 @@
   margin-bottom: 43px;
 }
 .gallery .gallery-wrapper {
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-.gallery img {
-  max-width: 413px;
+.gallery .quad {
+  margin-right: 27px;
 }
-.gallery .bike-4 {
-  max-width: 20.86%;
-  height: 80%;
-  position: absolute;
-  top: 50px;
-  right: -300px;
-  z-index: -2;
-}
-.gallery .bike-5 {
-  width: 20.86%;
-  height: 326.15px;
-  position: absolute;
-  top: 50px;
-  left: -300px;
-  z-index: -2;
+.gallery .quad:last-child {
+  margin-right: 0;
 }
 .gallery .scroll {
   margin-top: 47.22px;
@@ -53,4 +42,33 @@
   font-size: 18px;
   font-weight: 300;
   color: #121214;
+}
+
+@media (max-width: 1320px) {
+  .quad:nth-child(2) {
+    height: 327px;
+  }
+  .quad:nth-child(4) {
+    height: 327px;
+  }
+  .quad:first-child {
+    display: none;
+  }
+  .quad:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .quad:nth-child(3) {
+    width: 70%;
+  }
+  .quad:nth-child(2) {
+    height: auto;
+    width: 55%;
+  }
+  .quad:nth-child(4) {
+    height: auto;
+    width: 55%;
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=gallery.css.map */

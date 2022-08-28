@@ -1,4 +1,5 @@
 .offers{
+    overflow: hidden;
     padding-top: 63px;
     padding-bottom: 75px;
 
@@ -30,7 +31,7 @@
 
     .discount-birthday{
         position: relative;
-       max-width: 636px;
+        max-width: 636px;
         background-color: #F4F4F4;
         border-radius: 9px;
 
@@ -50,7 +51,14 @@
             color: #373737;
             margin-left: 333px;
             margin-right: 15px;
+            margin-bottom: 30px;
         }
+       
+       .birhtday{
+        float: left;
+        height: 311px;
+       }
+       
 
         img{
             border-radius: 9px;
@@ -62,7 +70,13 @@
             right: 0;
             border-radius:0 0 9px 0;
         }
+
+        
+
     }
+
+
+
     .customer-discount{
         position: relative;
         max-width: 636px;
@@ -85,8 +99,6 @@
              margin-left: 32px;
              padding: 14px 45px;
              z-index: 3;
-             
- 
          }
          a:hover{
              background-color: #037E8C;
@@ -100,6 +112,11 @@
             color: #373737;
             margin-left: 333px;
             margin-right: 15px;
+        }
+
+        .discount{
+            float: left;
+            height: 311px;
         }
        
     
@@ -144,5 +161,100 @@
     }
     .customer-discount{
         margin-right: 20px;
+    }
+    .offers .detail{
+        top: 395px;
+    }
+}
+@media(max-width:691px){
+    .offers h2{
+        font-size: 24px;
+    }
+
+    .offers-wrapper .customer-discount{
+        padding-bottom: 30px;
+    }
+
+    .offers-wrapper .discount-birthday .birhtday, .offers-wrapper .customer-discount .discount {
+        float: none;
+        height: 250px;
+    }
+    .offers-wrapper .discount-birthday .birhtday img, .offers-wrapper .customer-discount .discount img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .offers-wrapper .discount-birthday h2{
+        font-size: 24px;
+        margin: 20px 128px 19px 21px;
+    }
+    .offers-wrapper .discount-birthday .db{
+        font-size: 18px;
+    }
+    .offers-wrapper .discount-birthday p{
+       
+        font-size: 16px;
+        margin: 0 182px 45px 21px;
+    }
+
+
+    .offers-wrapper .customer-discount h2{
+        font-size: 24px;
+        margin: 10px 128px 5px 21px;
+    }
+
+    .offers-wrapper .customer-discount p{
+        font-size: 16px;
+        margin: 0 182px 0 21px;
+    }
+
+    .offers-wrapper .customer-discount a{
+        position: static;
+        margin-top: 9px;
+        margin-left: 21px;
+        margin-bottom: 10px;
+    }
+
+    .offers .bugs{
+        display:none;
+    }
+    .offers .detail{
+        display: none;
+    }
+
+}
+
+@media(max-width:465px){
+    .offers-wrapper .customer-discount p{
+        margin-right: 122px;
+    }
+    .offers-wrapper .customer-discount a{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:442px){
+    .offers-wrapper .discount-birthday p{
+        margin-right: 140px;
+    }
+    .offers-wrapper .discount-birthday .birhtday, .offers-wrapper .customer-discount .discount{
+        height: 190px;
+    }
+}
+
+@media(max-width:402px){
+    .offers-wrapper .customer-discount p{
+        margin-right: 72px;
+    }
+}
+
+@media(max-width:398px){
+    .offers-wrapper .discount-birthday p{
+        margin-right: 100px;
+    }
+}
+@media(max-width:372px){
+    .offers-wrapper .discount-birthday h2{
+        margin-right: 108px;
     }
 }

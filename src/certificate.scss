@@ -15,12 +15,12 @@
     }
     P{
        @extend %text;
-        width: 524px;
+       
        
     }
     .present{
        margin: auto;
-        width: 42.9%;
+        width: 558px;
         font:500 20px Montserrat;
         color: #037E8C;
         text-align: center;
@@ -28,7 +28,7 @@
     }
     .cfmoto{
         position: relative;
-        max-width: 48.9%;
+        max-width: 636px;
         padding-top: 35px;
         padding-bottom: 59px;
         background-color: #373737;
@@ -36,6 +36,7 @@
 
         h2{
             text-align: right;
+            margin-left: 206px;
             margin-right: 63px;
             font-weight: 900;
             font-size: 48px;
@@ -74,6 +75,7 @@
         }
     }
     .gift{
+        max-width: 524px;
         p{
            margin-top: 31px;
         }
@@ -115,14 +117,14 @@
 }
 
 
-@media(max-width:1240px){
-    .certificate-wrapper{
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-items: center;
+@media(max-width:1330px){
+    .certificate .certificate-wrapper{
+        justify-content: space-evenly;
     }
-
 }
+
+
+
 @media(max-width:1300px){
     .certificate .cfmoto h2{
         font-size: 40px;
@@ -133,27 +135,76 @@
     .abstraction{
         max-width: 40%;
     }
-
 }
+
+@media(max-width:1240px){
+    .certificate-wrapper{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .certificate .gift{
+        margin-right: 40px;
+    }
+}
+
+
 @media(max-width:1160px){
     .kuban,.bow{
         max-width: 30%;
     }
     .certificate .cfmoto .kuban{
-        right: 30px;
+        right: 50px;
+    }
+    .certificate .gift{
+        margin-right: 40px;
     }
 }
 @media(max-width:1080px){
     .certificate .cfmoto h2{
+        margin-left: 106px;
         font-size: 30px;
     }
 
     .certificate .cfmoto .certificate-text{
         font-size: 18px;
+        margin-left: 24px;
     }
 
     .certificate .cfmoto{
         padding-top: 19px;
         padding-bottom: 23px;
+    }
+    .kuban,.bow{
+        max-width: 23%;
+    }
+    .certificate .cfmoto p{
+        margin-left: 25px;
+    }
+    .certificate .cfmoto .kuban{
+        right: 43px;
+        top: 75px;
+        max-width: 20%;
+    }
+    .certificate .gift{
+        max-width: 398px;
+        margin-right: 0;
+    }
+}
+@media(max-width:580px){
+    .certificate h2{
+        font-size: 24px;
+    }
+    .certificate .present{
+        width: 100%;
+    }
+}
+@media(max-width:430px){
+    .certificate .cfmoto h2{
+        margin-left: 81px;
+        margin-right: 32px;
+    }
+    .certificate .gift{
+        max-width: 342px;
     }
 }

@@ -18,7 +18,7 @@
 .service-wrapper{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(413px, 413px));
+    grid-template-columns: repeat(auto-fill, minmax(341px, 413px));
    gap: 28px;
 
     div{
@@ -44,5 +44,17 @@
     }
 }
 
+
+@media(max-width: 526px){
+    .service h2{
+        font-size: 24px;
+        width: 100%;
+    }
+}
+@media(max-width: 440px){
+    .service-wrapper div{
+        width: 100%;
+    }
+}
 
 

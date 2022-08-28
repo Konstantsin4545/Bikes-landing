@@ -1,5 +1,7 @@
 .team{
+    overflow: hidden;
     padding: 64px 0; 
+   
     
     h2{
         @extend %head;
@@ -67,9 +69,43 @@
 }
 
 
+@media(max-width:1351px){
+    .team .canister{
+        top: 515px;
+        left: -280px;
+    }
+}
+
+
+@media(max-width:691px){
+    .team .bumper{
+        display: none;
+    }
+    .team .canister{
+        display: none;
+    }
+}
+
+
 
 @media(max-width:668px){
     .team-wrapper{
-        grid-template-columns: repeat(2, minmax(303px, 303px));
+        grid-template-columns: repeat(2, minmax(160px, 303px));
     }
+}
+@media(max-width:530px){
+    .team .team-wrapper .colleagues h3{
+        font-size: 18px;
+        margin-top: 0;
+        margin-left: 13px;
+    }
+    .team .team-wrapper .colleagues p{
+        font-size: 14px;
+        margin-bottom: 9px;
+        margin-left: 13px;
+    }
+    .team h2{
+        font-size: 24px;
+    }
+
 }
